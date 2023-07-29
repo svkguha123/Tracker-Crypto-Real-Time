@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --white: #fff;
+  --black: #111;
+  --blue: #3a80e9;
+  --grey: #888;
+  --darkgrey: #1b1b1b;
+  --green: #61c96f;
+  --red: #f94141;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+}
+
+::selection {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 3rem;
+}
+
+a {
+  color: var(--white) !important;
+  text-decoration: none !important;
+}
+
+img {
+  pointer-events: none;
+}
+
+.grey-wrapper {
+  display: block;
+  width: 90%;
+  margin: 1.5rem auto;
+  border-radius: 0.8rem;
+  padding: 1rem 1rem;
+}
+
+.grey-wrapper2 {
+  display: block;
+  width: 86%;
+  background-color: var(--darkgrey);
+  margin: 1.5rem auto;
+  border-radius: 0.8rem;
+  padding: 0rem 1rem;
+}
+
+.coin-days-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.5rem;
+  gap: 2rem;
+
+}
+
+[data-theme="dark"] {
+  --white: #ffffff;
+  --black: #111;
+  --grey: #a5a2a2;
+  --darkgrey: #1b1b1b;
+  --teal: rgb(15, 66, 66);
+  --sky: rgb(150, 216, 216);
+  --tomato: rgb(228, 59, 29);
+  --yellow: rgb(226, 226, 45);
+}
+
+[data-theme="light"] {
+  --white: #111;
+  --black: #fff;
+  --grey: #5f5e5e;
+  --darkgrey: #f3f3f3;
+  --teal: rgb(4, 41, 41);
+  --sky: rgb(38, 206, 206);
+  --tomato: rgb(236, 56, 24);
+  --yellow: rgb(226, 226, 45);
+}
+
+/* .cursor {
+  position: fixed;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  background-color: var(--white);
+  z-index: 10000;
+  border: 2px solid var(--blue);
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  transition: all 200ms ease-out;
+} 
+
+.cursor-pointer {
+  position: fixed;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  background-color: transparent;
+  z-index: 10000;
+  border: 2px solid var(--green);
+  height: .8rem;
+  width: .8rem;
+  transition: all 200ms ease-out;
+} */
